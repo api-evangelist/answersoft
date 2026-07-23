@@ -1,8 +1,28 @@
 aid: answersoft
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/answersoft.png
 name: AnswerSoft
-description: AnswerSoft is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'AnswerSoft, Inc. was a privately-held computer-telephony integration (CTI) software
+  company based in Richardson, Texas. Its Concerto product line automated interactions between
+  telephony systems and business applications, covering smart screen pop, intelligent call routing,
+  data mining, and early internet-enabled call centers. Davox Corporation acquired AnswerSoft in a
+  stock-for-stock transaction in 1998 to pair AnswerSoft''s inter-application automation with Davox''s
+  Unison outbound call center line, taking the combined company into the emerging CRM market. Davox
+  renamed itself Concerto Software in 2002, merged with Aspect Communications to form Aspect Software
+  in 2005, and merged with Noble Systems to become Alvaria in 2021. AnswerSoft has not operated
+  independently for over twenty-five years, publishes no API, developer program, or documentation, and
+  the answersoft.com domain is now listed for sale on the GoDaddy aftermarket. This profile is retained
+  as a historical acquired-company lead only.'
 url: https://raw.githubusercontent.com/api-evangelist/answersoft/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +30,41 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: davox
+x-acquired-year: 1998
+x-successor: Alvaria (via Davox > Concerto Software > Aspect Software)
+x-domain-status: parked-for-sale
+x-enrichment-note: 'Enrichment attempted 2026-07-19: answersoft.com and www.answersoft.com return a
+  JS lander that redirects to forsale.godaddy.com (domain parked on afternic.com nameservers, null MX
+  "0 .", SPF "v=spf1 -all"). The host wildcard soft-404s every path with HTTP 200, so /.well-known/security.txt,
+  /openid-configuration, /oauth-authorization-server, /api-catalog, /ai-plugin.json, /llms.txt and
+  /openapi.json all "200" with parking HTML or GoDaddy for-sale copy rather than real artifacts — none
+  were saved. api./docs./developer. subdomains resolve to the same parking IPs. No product, API,
+  OpenAPI, SDK, or docs surface exists. Nothing enrichable — dead lead, do not re-queue.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Contact Center
+- Computer Telephony Integration
+- Call Center Software
+- CRM
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Product
+  name: Alvaria (successor to Davox / Concerto Software / Aspect Software)
+  url: https://www.alvaria.com
+x-enrichment:
+  date: '2026-07-19'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
