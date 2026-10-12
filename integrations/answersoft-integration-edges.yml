@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/answersoft/integrations
+- https://n8n.io/integrations/answersoft/
+- https://composio.dev/toolkits/answersoft
+- https://monid.ai/tools/answersoft
+checked:
+- https://composio.dev/toolkits/answersoft
+- https://monid.ai/tools/answersoft
+- https://n8n.io/integrations/answersoft/
+- https://zapier.com/apps/answersoft/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
